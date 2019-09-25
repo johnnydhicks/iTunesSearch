@@ -1,15 +1,15 @@
 //
-//  iTunesSearchTests.swift
-//  iTunesSearchTests
+//  iTunesTopAlbumsTests.swift
+//  iTunesTopAlbumsTests
 //
 //  Created by Johnny Hicks on 9/24/19.
 //  Copyright © 2019 Swiftly, LLC. All rights reserved.
 //
 
 import XCTest
-@testable import iTunesSearch
+@testable import iTunesTopAlbums
 
-class iTunesSearchTests: XCTestCase {
+class iTunesTopAlbumsTests: XCTestCase {
     func testForTopTenResults() {
         let mock = MockDataLoader()
         mock.data = sampleJsonData

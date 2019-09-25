@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		387A134B2339873F009BCEC3 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		387A134B2339873F009BCEC3 /* iTunesTopAlbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesTopAlbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		387A134E2339873F009BCEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		387A13502339873F009BCEC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		387A13522339873F009BCEC3 /* TopAlbumsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlbumsTableViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		387A136523398806009BCEC3 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		38E8279E233B0EAC009EFFE6 /* NetworkDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataLoader.swift; sourceTree = "<group>"; };
 		38E827A0233B0F42009EFFE6 /* URLSession+NetworkDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkDataLoader.swift"; sourceTree = "<group>"; };
-		38E827A6233B10DD009EFFE6 /* iTunesSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E827A6233B10DD009EFFE6 /* iTunesTopAlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesTopAlbumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E827A8233B10DD009EFFE6 /* iTunesSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesSearchTests.swift; sourceTree = "<group>"; };
 		38E827AA233B10DD009EFFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E827B0233B113D009EFFE6 /* SampleJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleJson.swift; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 		387A13422339873F009BCEC3 = {
 			isa = PBXGroup;
 			children = (
-				387A134D2339873F009BCEC3 /* iTunesSearch */,
-				38E827A7233B10DD009EFFE6 /* iTunesSearchTests */,
+				387A134D2339873F009BCEC3 /* iTunesTopAlbums */,
+				38E827A7233B10DD009EFFE6 /* iTunesTopAlbumsTests */,
 				387A134C2339873F009BCEC3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,20 +82,20 @@
 		387A134C2339873F009BCEC3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				387A134B2339873F009BCEC3 /* iTunesSearch.app */,
-				38E827A6233B10DD009EFFE6 /* iTunesSearchTests.xctest */,
+				387A134B2339873F009BCEC3 /* iTunesTopAlbums.app */,
+				38E827A6233B10DD009EFFE6 /* iTunesTopAlbumsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		387A134D2339873F009BCEC3 /* iTunesSearch */ = {
+		387A134D2339873F009BCEC3 /* iTunesTopAlbums */ = {
 			isa = PBXGroup;
 			children = (
 				387A1364233987F6009BCEC3 /* Networking */,
 				38E8279C233B0CA0009EFFE6 /* Resources */,
 				38E8279D233B0CBB009EFFE6 /* ViewControllers */,
 			);
-			path = iTunesSearch;
+			path = iTunesTopAlbums;
 			sourceTree = "<group>";
 		};
 		387A1364233987F6009BCEC3 /* Networking */ = {
@@ -130,7 +130,7 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		38E827A7233B10DD009EFFE6 /* iTunesSearchTests */ = {
+		38E827A7233B10DD009EFFE6 /* iTunesTopAlbumsTests */ = {
 			isa = PBXGroup;
 			children = (
 				38E827A8233B10DD009EFFE6 /* iTunesSearchTests.swift */,
@@ -138,15 +138,15 @@
 				38E827B0233B113D009EFFE6 /* SampleJson.swift */,
 				38E827B2233B1262009EFFE6 /* MockDataLoader.swift */,
 			);
-			path = iTunesSearchTests;
+			path = iTunesTopAlbumsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		387A134A2339873F009BCEC3 /* iTunesSearch */ = {
+		387A134A2339873F009BCEC3 /* iTunesTopAlbums */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 387A135F23398740009BCEC3 /* Build configuration list for PBXNativeTarget "iTunesSearch" */;
+			buildConfigurationList = 387A135F23398740009BCEC3 /* Build configuration list for PBXNativeTarget "iTunesTopAlbums" */;
 			buildPhases = (
 				387A13472339873F009BCEC3 /* Sources */,
 				387A13482339873F009BCEC3 /* Frameworks */,
@@ -156,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = iTunesSearch;
+			name = iTunesTopAlbums;
 			productName = iTunesSearch;
-			productReference = 387A134B2339873F009BCEC3 /* iTunesSearch.app */;
+			productReference = 387A134B2339873F009BCEC3 /* iTunesTopAlbums.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38E827A5233B10DD009EFFE6 /* iTunesSearchTests */ = {
+		38E827A5233B10DD009EFFE6 /* iTunesTopAlbumsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38E827AD233B10DE009EFFE6 /* Build configuration list for PBXNativeTarget "iTunesSearchTests" */;
+			buildConfigurationList = 38E827AD233B10DE009EFFE6 /* Build configuration list for PBXNativeTarget "iTunesTopAlbumsTests" */;
 			buildPhases = (
 				38E827A2233B10DD009EFFE6 /* Sources */,
 				38E827A3233B10DD009EFFE6 /* Frameworks */,
@@ -174,9 +174,9 @@
 			dependencies = (
 				38E827AC233B10DD009EFFE6 /* PBXTargetDependency */,
 			);
-			name = iTunesSearchTests;
+			name = iTunesTopAlbumsTests;
 			productName = iTunesSearchTests;
-			productReference = 38E827A6233B10DD009EFFE6 /* iTunesSearchTests.xctest */;
+			productReference = 38E827A6233B10DD009EFFE6 /* iTunesTopAlbumsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 387A13462339873F009BCEC3 /* Build configuration list for PBXProject "iTunesSearch" */;
+			buildConfigurationList = 387A13462339873F009BCEC3 /* Build configuration list for PBXProject "iTunesTopAlbums" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -211,8 +211,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				387A134A2339873F009BCEC3 /* iTunesSearch */,
-				38E827A5233B10DD009EFFE6 /* iTunesSearchTests */,
+				387A134A2339873F009BCEC3 /* iTunesTopAlbums */,
+				38E827A5233B10DD009EFFE6 /* iTunesTopAlbumsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,7 +267,7 @@
 /* Begin PBXTargetDependency section */
 		38E827AC233B10DD009EFFE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 387A134A2339873F009BCEC3 /* iTunesSearch */;
+			target = 387A134A2339873F009BCEC3 /* iTunesTopAlbums */;
 			targetProxy = 38E827AB233B10DD009EFFE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,12 +413,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = iTunesSearch/Resources/Info.plist;
+				INFOPLIST_FILE = iTunesTopAlbums/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesTopAlbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -433,12 +433,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = iTunesSearch/Resources/Info.plist;
+				INFOPLIST_FILE = iTunesTopAlbums/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesTopAlbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -452,17 +452,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A3323C976;
-				INFOPLIST_FILE = iTunesSearchTests/Info.plist;
+				INFOPLIST_FILE = iTunesTopAlbumsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesTopAlbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSearch.app/iTunesSearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesTopAlbums.app/iTunesTopAlbums";
 			};
 			name = Debug;
 		};
@@ -472,24 +472,24 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A3323C976;
-				INFOPLIST_FILE = iTunesSearchTests/Info.plist;
+				INFOPLIST_FILE = iTunesTopAlbumsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesSearchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnhicks.iTunesTopAlbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesSearch.app/iTunesSearch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunesTopAlbums.app/iTunesTopAlbums";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		387A13462339873F009BCEC3 /* Build configuration list for PBXProject "iTunesSearch" */ = {
+		387A13462339873F009BCEC3 /* Build configuration list for PBXProject "iTunesTopAlbums" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				387A135D23398740009BCEC3 /* Debug */,
@@ -498,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		387A135F23398740009BCEC3 /* Build configuration list for PBXNativeTarget "iTunesSearch" */ = {
+		387A135F23398740009BCEC3 /* Build configuration list for PBXNativeTarget "iTunesTopAlbums" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				387A136023398740009BCEC3 /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38E827AD233B10DE009EFFE6 /* Build configuration list for PBXNativeTarget "iTunesSearchTests" */ = {
+		38E827AD233B10DE009EFFE6 /* Build configuration list for PBXNativeTarget "iTunesTopAlbumsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38E827AE233B10DE009EFFE6 /* Debug */,

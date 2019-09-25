@@ -1,13 +1,13 @@
 //
 //  MockDataLoader.swift
-//  iTunesSearchTests
+//  iTunesTopAlbumsTests
 //
 //  Created by Johnny Hicks on 9/24/19.
 //  Copyright © 2019 Swiftly, LLC. All rights reserved.
 //
 
 import Foundation
-@testable import iTunesSearch
+@testable import iTunesTopAlbums
 
 class MockDataLoader: NetworkDataLoader {
     var request: URLRequest?

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  iTunesSearch
+//  iTunesTopAlbums
 //
 //  Created by Johnny Hicks on 9/23/19.
 //  Copyright © 2019 Swiftly, LLC. All rights reserved.
