@@ -13,7 +13,6 @@ class TopAlbumsTableViewController: UITableViewController {
     // MARK: - Properties
     private let networkController = NetworkController()
     private let imageLoadingQueue = DispatchQueue(label: "FetchPhotos")
-    private var albums: [Album] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +22,10 @@ class TopAlbumsTableViewController: UITableViewController {
     // MARK: - Network Request
     private func fetchAlbums() {
         networkController.fetchItunesData { (feed) in
-            if let feed = feed {
-                self.albums = feed.feed.results
-            }
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+            if let _ = feed {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
     }
@@ -36,13 +33,13 @@ class TopAlbumsTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.albums.count
+        return self.networkController.albums.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell", for: indexPath)
         
-        let album = self.albums[indexPath.row]
+        let album = self.networkController.albums[indexPath.row]
         cell.textLabel?.text = album.name
         cell.detailTextLabel?.text = album.artistName
         cell.imageView?.image = UIImage(named: "artwork.cover")
@@ -69,7 +66,7 @@ class TopAlbumsTableViewController: UITableViewController {
             let vc = segue.destination as? AlbumDetailViewController,
             let indexPath = self.tableView.indexPathForSelectedRow {
             let cell = tableView.cellForRow(at: indexPath)
-            let album = self.albums[indexPath.row]
+            let album = self.networkController.albums[indexPath.row]
             vc.album = album
             vc.albumArtImage = cell?.imageView?.image
         }

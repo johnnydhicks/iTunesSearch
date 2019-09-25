@@ -32,11 +32,18 @@ struct Genre: Decodable {
 
 class NetworkController {
     
+    let dataLoader: NetworkDataLoader
+    private(set) var albums: [Album] = []
+    init(dataLoader: NetworkDataLoader = URLSession.shared) {
+        self.dataLoader = dataLoader
+    }
+    
     let baseURL = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/top-albums/all/100/explicit.json")!
     
     func fetchItunesData(completion: @escaping (Feed?) -> Void) {
+        let request = URLRequest(url: baseURL)
         
-        URLSession.shared.dataTask(with: baseURL) { (data, _, error) in
+        self.dataLoader.loadData(with: request) { (data, error) in
             if let error = error {
                 NSLog("Error: \(error.localizedDescription)")
                 completion(nil)
@@ -51,16 +58,18 @@ class NetworkController {
             
             do {
                 let feed = try JSONDecoder().decode(Feed.self, from: data)
+                self.albums = feed.feed.results
                 completion(feed)
             } catch let error {
                 print("There was an error decoding your data:%@", error)
                 completion(nil)
             }
-        }.resume()
+        }
     }
     
     func fetchAlbumArt(for url: URL, completion: @escaping (UIImage?) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, _, error) in
+        let request = URLRequest(url: url)
+        self.dataLoader.loadData(with: request) { (data, error) in
             if let error = error {
                 NSLog("Error fetching image for album art:%@", error.localizedDescription)
                 completion(nil)
@@ -75,7 +84,6 @@ class NetworkController {
             
             let image = UIImage(data: data)
             completion(image)
-            
-        }.resume()
+        }
     }
 }
