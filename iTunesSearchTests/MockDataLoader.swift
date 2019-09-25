@@ -3,7 +3,7 @@
 //  iTunesSearchTests
 //
 //  Created by Johnny Hicks on 9/24/19.
-//  Copyright © 2019 Lambda, Inc. All rights reserved.
+//  Copyright © 2019 Swiftly, LLC. All rights reserved.
 //
 
 import Foundation
